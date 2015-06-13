@@ -29,11 +29,11 @@
     "directories": {},
     "dependencies": {
       "babel-plugin-react-hotify": "github:loggur/babel-plugin-react-hotify@actuallyWorks",
-      "react-hotify": "github:loggur/react-hotify@master"
+      "react-hotify": "github:timbur/react-hotify@actuallyWorks"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.1.13",
-      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "babel": "npm:babel-core@^5.4.7",
+      "babel-runtime": "npm:babel-runtime@^5.4.7",
       "core-js": "npm:core-js@^0.9.4"
     }
   }
