@@ -16,10 +16,10 @@ System.config({
 System.config({
   "map": {
     "babel": "npm:babel-core@5.4.7",
-    "babel-plugin-react-hotify": "github:timbur/babel-plugin-react-hotify@actuallyWorks",
+    "babel-plugin-react-hotify": "github:loggur/babel-plugin-react-hotify@actuallyWorks",
     "babel-runtime": "npm:babel-runtime@5.4.7",
     "core-js": "npm:core-js@0.9.13",
-    "react-hotify": "github:timbur/react-hotify@actuallyWorks",
+    "react-hotify": "github:loggur/react-hotify@master",
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },
