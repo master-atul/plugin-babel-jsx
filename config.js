@@ -19,7 +19,7 @@ System.config({
     "babel-plugin-react-hotify": "github:loggur/babel-plugin-react-hotify@actuallyWorks",
     "babel-runtime": "npm:babel-runtime@5.4.7",
     "core-js": "npm:core-js@0.9.13",
-    "react-hotify": "github:loggur/react-hotify@master",
+    "react-hotify": "github:timbur/react-hotify@actuallyWorks",
     "github:jspm/nodelibs-process@0.1.1": {
       "process": "npm:process@0.10.1"
     },
