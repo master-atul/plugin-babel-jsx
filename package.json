@@ -28,7 +28,7 @@
   "jspm": {
     "directories": {},
     "dependencies": {
-      "babel-plugin-react-hotify": "github:loggur/babel-plugin-react-hotify@master",
+      "babel-plugin-react-hotify": "github:loggur/babel-plugin-react-hotify@actuallyWorks",
       "react-hotify": "github:loggur/react-hotify@master"
     },
     "devDependencies": {
