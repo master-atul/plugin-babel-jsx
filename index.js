@@ -1,7 +1,7 @@
 'use strict';
 
 var babel = require('babel');
-//var hotifyPlugin = require('babel-plugin-react-hotify');
+var hotifyPlugin = require('babel-plugin-react-hotify');
 
 exports.translate = function (load) {
   var babelOptions = System.babelOptions || {};
@@ -20,7 +20,7 @@ exports.translate = function (load) {
 
   options.stage = babelOptions.stage || 0;
   options.optional = babelOptions.optional || ['runtime'];
-  //options.plugins = babelOptions.plugins || [hotifyPlugin];
+  options.plugins = babelOptions.plugins || [hotifyPlugin];
   
   output = babel.transform(load.source, options);
   load.source = output.code;
