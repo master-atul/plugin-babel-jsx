@@ -11,13 +11,12 @@
     "url": "git+https://github.com/loggur/plugin-babel-jsx.git"
   },
   "keywords": [
-    "SystemJS",
-    "JSPM",
-    "Babel",
-    "JSX",
-    "React",
+    "babel",
+    "plugin",
+    "jsx",
+    "react",
     "hot",
-    "reloading"
+    "reload"
   ],
   "author": "timbur",
   "license": "MIT",
@@ -27,14 +26,10 @@
   "homepage": "https://github.com/loggur/plugin-babel-jsx#readme",
   "jspm": {
     "directories": {},
-    "dependencies": {
-      "babel-plugin-react-hotify": "github:loggur/babel-plugin-react-hotify@actuallyWorks",
-      "react-hotify": "github:timbur/react-hotify@actuallyWorks"
-    },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.4.7",
-      "babel-runtime": "npm:babel-runtime@^5.4.7",
-      "core-js": "npm:core-js@^0.9.4"
+      "babel": "npm:babel-core@^5.5.8",
+      "babel-runtime": "npm:babel-runtime@^5.5.8",
+      "core-js": "npm:core-js@^0.9.17"
     }
   }
 }
