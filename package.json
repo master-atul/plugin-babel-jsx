@@ -28,8 +28,9 @@
     "babel-plugin-react-hot": "loggur/babel-plugin-react-hot"
   },
   "jspm": {
+    "directories": {},
     "dependencies": {
-      "babel-plugin-react-hot": "loggur/babel-plugin-react-hot"
+      "babel-plugin-react-hot": "github:loggur/babel-plugin-react-hot@master"
     }
   }
 }
