@@ -1,6 +1,6 @@
 {
   "name": "plugin-babel-jsx",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "SystemJS plugin that uses Babel for jsx transformation.",
   "main": "index.js",
   "scripts": {
