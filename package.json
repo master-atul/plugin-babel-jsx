@@ -24,12 +24,7 @@
     "url": "https://github.com/loggur/plugin-babel-jsx/issues"
   },
   "homepage": "https://github.com/loggur/plugin-babel-jsx#readme",
-  "jspm": {
-    "directories": {},
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.5.8",
-      "babel-runtime": "npm:babel-runtime@^5.5.8",
-      "core-js": "npm:core-js@^0.9.17"
-    }
+  "dependencies": {
+    "babel-plugin-react-hot": "loggur/babel-plugin-react-hot"
   }
 }
