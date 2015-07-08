@@ -3,7 +3,6 @@
   "version": "1.0.1",
   "description": "SystemJS plugin that uses Babel for jsx transformation.",
   "main": "index.js",
-  "jspm": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +26,10 @@
   "homepage": "https://github.com/loggur/plugin-babel-jsx#readme",
   "dependencies": {
     "babel-plugin-react-hot": "loggur/babel-plugin-react-hot"
+  },
+  "jspm": {
+    "dependencies": {
+      "babel-plugin-react-hot": "loggur/babel-plugin-react-hot"
+    }
   }
 }
