@@ -18,6 +18,12 @@ exports.translate = function (load) {
   options.optional = babelOptions.optional || ['runtime'];
   options.plugins = (babelOptions.plugins || []).concat(hotPlugin);
   
-  output = babel.transform(load.source, options);
-  load.source = output.code;
+  try {
+    output = babel.transform(load.source, options);
+    load.source = output.code;
+  } catch (err) {
+    delete options.sourceMap;
+    output = babel.transform(load.source, options);
+    load.source = output.code;
+  }
 };
