@@ -17,6 +17,7 @@ exports.translate = function (load) {
   options.stage = babelOptions.stage || 0;
   options.optional = babelOptions.optional || ['runtime'];
   options.plugins = (babelOptions.plugins || []).concat(hotPlugin);
+  options.modules = 'system';
   
   try {
     output = babel.transform(load.source, options);
