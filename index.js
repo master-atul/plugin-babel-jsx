@@ -5,11 +5,14 @@ var hotPlugin = require('babel-plugin-react-hot');
 
 exports.translate = function (load) {
   var babelOptions = System.babelOptions || {};
-  var split = load.address.split('/');
+  var address = load.address;
+  var split = address.split('/');
   var filename = split.pop();
   var options = {};
+  var pathname;
   var output;
 
+  options._address = address;
   options.filename = filename;
   options.sourceMap = 'inline';
   options.sourceFileName = filename+'!source';
