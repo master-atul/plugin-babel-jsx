@@ -10,7 +10,7 @@ System.config({
 
 System.config({
   "map": {
-    "babel-plugin-react-hot": "github:loggur/babel-plugin-react-hot@master",
+    "babel-plugin-react-hot": "github:loggur/babel-plugin-react-hot@1.0.0",
     "github:jspm/nodelibs-buffer@0.1.0": {
       "buffer": "npm:buffer@3.3.1"
     },
@@ -29,7 +29,7 @@ System.config({
     "github:jspm/nodelibs-util@0.1.0": {
       "util": "npm:util@0.10.3"
     },
-    "github:loggur/babel-plugin-react-hot@master": {
+    "github:loggur/babel-plugin-react-hot@1.0.0": {
       "react": "npm:react@0.13.3",
       "react-hot-api": "npm:react-hot-api@0.4.5"
     },

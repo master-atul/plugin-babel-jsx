@@ -25,12 +25,12 @@
   },
   "homepage": "https://github.com/loggur/plugin-babel-jsx#readme",
   "dependencies": {
-    "babel-plugin-react-hot": "loggur/babel-plugin-react-hot"
+    "babel-plugin-react-hot": "^1.0.0"
   },
   "jspm": {
     "directories": {},
     "dependencies": {
-      "babel-plugin-react-hot": "github:loggur/babel-plugin-react-hot@master"
+      "babel-plugin-react-hot": "github:loggur/babel-plugin-react-hot@1.0.0"
     }
   }
 }

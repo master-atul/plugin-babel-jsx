@@ -20,7 +20,7 @@ jspm install jsx=npm:plugin-babel-jsx
 import someComponent from 'some-component.jsx!';
 ```
 
-Or if you want to import from `some-component.jsx` instead of `some-component.jsx!`, you configure `System` along these lines:
+Or if you want to import from `some-component.jsx` instead of `some-component.jsx!`, you can configure `System` along these lines:
 ```js
 System.config({
   "baseURL": "./",
