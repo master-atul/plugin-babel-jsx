@@ -49,3 +49,6 @@ System.config({
   }
 });
 ```
+
+## License
+MIT
