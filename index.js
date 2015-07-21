@@ -14,8 +14,6 @@ exports.translate = function (load) {
 
   options._address = address;
   options.filename = filename;
-  options.sourceMap = 'inline';
-  options.sourceFileName = filename+'!source';
 
   options.stage = babelOptions.stage || 0;
   options.optional = babelOptions.optional || ['runtime'];
@@ -25,9 +23,8 @@ exports.translate = function (load) {
   try {
     output = babel.transform(load.source, options);
     load.source = output.code;
+    load.metadata.sourceMap = JSON.stringify(output.map);
   } catch (err) {
-    delete options.sourceMap;
-    output = babel.transform(load.source, options);
-    load.source = output.code;
+    console.error(err);
   }
 };
