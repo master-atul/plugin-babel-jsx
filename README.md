@@ -8,7 +8,7 @@ Builds/bundles have not yet been tested with all of this, but in development, al
 
 ## Installation
 ```
-jspm install jsx=github:loggur/plugin-babel-jsx@1.0.3
+jspm install jsx=github:loggur/plugin-babel-jsx
 ```
 or
 ```
