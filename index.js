@@ -21,10 +21,15 @@ exports.translate = function (load) {
   options.modules = 'system';
   
   try {
+    options.sourceMaps = true;
     output = babel.transform(load.source, options);
     load.source = output.code;
     load.metadata.sourceMap = JSON.stringify(output.map);
   } catch (err) {
     console.error(err);
+    options.sourceMaps = false;  // bug with Babel source maps?
+    output = babel.transform(load.source, options);
+    load.source = output.code;
+    delete load.metadata.sourceMap;
   }
 };
