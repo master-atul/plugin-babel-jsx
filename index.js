@@ -20,10 +20,15 @@ exports.translate = function (load) {
   options.plugins = (babelOptions.plugins || []).concat(hotPlugin);
 
   try {
-    options.sourceMaps = true;
+    console.error(err);
+    options.sourceMaps = false;  // bug with Babel source maps?
     output = babel.transform(load.source, options);
     load.source = output.code;
-    load.metadata.sourceMap = output.map;
+    delete load.metadata.sourceMap;
+    // options.sourceMaps = true;
+    // output = babel.transform(load.source, options);
+    // load.source = output.code;
+    // load.metadata.sourceMap = JSON.stringify(output.map);
   } catch (err) {
     console.error(err);
     options.sourceMaps = false;  // bug with Babel source maps?
