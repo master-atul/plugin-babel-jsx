@@ -18,12 +18,12 @@ exports.translate = function (load) {
   options.stage = babelOptions.stage || 0;
   options.optional = babelOptions.optional || ['runtime'];
   options.plugins = (babelOptions.plugins || []).concat(hotPlugin);
-  
+
   try {
     options.sourceMaps = true;
     output = babel.transform(load.source, options);
     load.source = output.code;
-    load.metadata.sourceMap = JSON.stringify(output.map);
+    load.metadata.sourceMap = output.map;
   } catch (err) {
     console.error(err);
     options.sourceMaps = false;  // bug with Babel source maps?
